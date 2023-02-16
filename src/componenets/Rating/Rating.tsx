@@ -15,5 +15,5 @@ export function Rating() {
 
 function Star() {
     console.log('star')
-    return <div>Star</div>
+    return <span> <b>star</b> </span>
 }
