@@ -7,9 +7,11 @@ function App() {
     return (
         <div>
             <AppTitle/>
-            <Rating/>
+            Article1
+            <Rating value={3}/>
             <Accordion/>
-            <Rating/>
+            Article2
+            <Rating value={4}/>
         </div>
     );
 }
