@@ -6,21 +6,30 @@ import {Rating} from "./componenets/Rating/Rating";
 function App() {
     return (
         <div>
-            <AppTitle/>
+            <AppTitle titleValue={'App component'}/>
+            <AppTitle titleValue={'Other component'}/>
             Article1
             <Rating value={3}/>
-            <Accordion/>
+            <Accordion titleValue={"Menu"} collapsed={false}/>
+            <Accordion titleValue={"Users"} collapsed={true}/>
             Article2
+            <Rating value={1}/>
+            <Rating value={2}/>
+            <Rating value={3}/>
             <Rating value={4}/>
+            <Rating value={5}/>
         </div>
     );
 }
 
-function AppTitle() {
-    console.log('Title')
-    return <>App component</>;
+type AppTitleType = {
+    titleValue: string
 }
 
+function AppTitle(props: AppTitleType) {
+    console.log('Title')
+    return <div>{props.titleValue}</div>;
+}
 
 
 export default App;
