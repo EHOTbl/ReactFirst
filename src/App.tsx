@@ -1,47 +1,22 @@
 import React from 'react';
 import './App.css';
+import Accordion from "./componenets/Accordeon/Accordeon";
+import {Rating} from "./componenets/Rating/Rating";
 
 function App() {
     return (
         <div>
             <AppTitle/>
             <Rating/>
-            <Accordeon/>
+            <Accordion/>
             <Rating/>
         </div>
     );
 }
 
 function AppTitle() {
+    console.log('Title')
     return <>App component</>;
-}
-
-
-function Rating() {
-    return (
-        <div>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </div>
-    )
-}
-
-function Accordeon() {
-    return <div>
-        <h3>Menu</h3>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-    </div>
-}
-
-function Star() {
-    return <div>Star</div>
 }
 
 
