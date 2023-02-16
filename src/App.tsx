@@ -2,27 +2,22 @@ import React from 'react';
 import './App.css';
 
 function App() {
-    debugger
     return (
         <div>
-            App component
+            <AppTitle/>
             <Rating/>
             <Accordeon/>
+            <Rating/>
         </div>
     );
 }
 
-function Hello() {
-    debugger
-    return console.log("hello")
+function AppTitle() {
+    return <>App component</>;
 }
 
-// Hello();
-
-export default App;
 
 function Rating() {
-    debugger
     return (
         <div>
             <Star/>
@@ -35,7 +30,6 @@ function Rating() {
 }
 
 function Accordeon() {
-    debugger
     return <div>
         <h3>Menu</h3>
         <ul>
@@ -49,3 +43,7 @@ function Accordeon() {
 function Star() {
     return <div>Star</div>
 }
+
+
+
+export default App;
